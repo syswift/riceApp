@@ -5,6 +5,12 @@
   align-items: center;
   color: #333;
 }
+
+.profileImage{
+  background-image: url("https://img.yzcdn.cn/vant/cat.jpeg");
+  background-size: cover;
+}
+
 .header-box .avatar {
   width: 128rpx;
   height: 128rpx;
@@ -14,8 +20,16 @@
   margin-left: 32rpx;
 }
 .header-box .r {
+  text-align: left;
   margin-left: 32rpx;
-  font-size: 28rpx;
+  font-size: 30rpx;
+  color: #eee;
+}
+
+
+.id{
+  font-size: 40rpx;
+  font-weight: bold;
 }
 
 page,view,image,input {

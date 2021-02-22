@@ -10,13 +10,17 @@
   </view>
 </block>
 <block wx:if="{{ userInfoStatus == 2 }}">
+  <van-cell center is-link url="/pages/my/info-menu" custom-class="profileImage">
   <view class="header-box">
     <image class="avatar" src="{{ apiUserInfoMap.base.avatarUrl }}" mode="aspectFill"></image>
     <view class="r">
-      <view class="uid">用户ID: {{ apiUserInfoMap.base.id }}</view>
-      <view class="nick">{{ apiUserInfoMap.base.nick }}</view>
+
+      <view class="nick id">{{ apiUserInfoMap.base.nick }}</view>
+      <view class="uid">ID: {{ apiUserInfoMap.base.id }}</view>
+      
     </view>
   </view>
+  </van-cell>
 
   <view class="space van-hairline--bottom"></view>
   <van-cell title="我的订单" value="更多" is-link url="/pages/order-list/index" />
@@ -32,7 +36,7 @@
     <van-grid-item icon="paid" text="优惠买单" url="/pages/maidan/index" />
     <van-grid-item icon="balance-list-o" text="资金明细" url="/pages/asset/index" />
     <van-grid-item icon="coupon-o" text="优惠券" url="/pages/coupons/index" link-type="switchTab" />
-    <van-grid-item icon="calendar-o" text="个人中心" url="/pages/my/info-menu" />
+    <van-grid-item icon="user-o" text="个人中心" url="/pages/my/info-menu" />
   </van-grid>
   <!-- 老样式 -->
   <view class="container">

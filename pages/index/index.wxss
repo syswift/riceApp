@@ -87,7 +87,7 @@
   flex-wrap: wrap;
 }
 .category-list{
-  width:150rpx;
+  width:180rpx;
   margin-top:20rpx;
   text-align: center;
   display: inline-block;

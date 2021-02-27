@@ -20,7 +20,7 @@
       <image mode="aspectFill" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
     </swiper-item> -->
   </swiper>
-  <!-- <view wx:if="{{goodsDynamic}}" class="goodsDynamic">
+   <view wx:if="{{goodsDynamic}}" class="goodsDynamic">
     <swiper class="swiper2" autoplay circular vertical>
       <navigator wx:for="{{goodsDynamic}}" wx:key="index" url="/pages/goods-details/index?id={{item.goodsId}}">
         <swiper-item>
@@ -31,7 +31,7 @@
         </swiper-item>
       </navigator>
     </swiper>
-  </view> -->
+  </view> 
 </view>
 <view class="notice-box" wx:if="{{noticeList}}">
   <swiper class="notice_swiper" vertical autoplay circular interval="8000">
@@ -112,7 +112,7 @@
     </view>
   </block> -->
   <!-- 秒杀结束 -->
-  <!-- <van-divider wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}" contentPosition="center">爆品推荐</van-divider> 
+  <van-divider wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}" contentPosition="center">爆品推荐</van-divider> 
   <view class="goods-container" wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}">
     <view class="goods-box" wx:for="{{goodsRecommend}}" wx:key="id" bindtap="toDetailsTap" data-id="{{item.id}}">
       <view class="img-box">
@@ -124,7 +124,7 @@
         <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
       </view>
     </view>
-  </view> -->
+  </view> 
   <!-- <view wx-if="{{kanjiaList.length > 0 && activeCategoryId == 0}}" class="weui-panel weui-panel_access" style='margin-top:0px;'>
     <view class="weui-panel__hd">疯狂砍价</view>
     <view class="weui-panel__bd">
